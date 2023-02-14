@@ -1,0 +1,18 @@
+@import '../../styles/heightComponents.scss';
+
+.container {
+    background-image: url('../../assets/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: $height_banner;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
+
+    &__text {
+        user-select: none;
+        font-size: 50px;
+    }
+}

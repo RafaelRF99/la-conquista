@@ -1,0 +1,72 @@
+@import '../../styles/heightComponents.scss';
+
+.container {
+    width: 100%;
+    height: $height_footer;
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border: 5px solid #000;
+    user-select: none;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    &__informacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 35px 0 0;
+    }
+
+    &__title {
+        font-size: 30px;
+        border-bottom: 1px solid #FFF;
+    }
+
+    &__lista {
+        font-size: 20px;
+    }
+
+    &__lista li {
+        margin-top: 5px;
+    }
+
+    &__lista li a {
+        margin-left: 4px;
+        list-style: none;
+        text-decoration: none;
+        color: rgb(171, 45, 45);
+    }
+
+
+    // CONTATO
+    // CONTATO
+    &__contato {
+
+        &__title {
+            font-size: 30px;
+            border-bottom: 1px solid #FFF;
+            display: inline-block;
+        }
+
+        &__lista {
+            margin: 5px 0;
+        }
+
+        &__lista li {
+            user-select: text;
+            margin-top: 5px;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 705px) {
+    .container {
+        &__informacao {
+            padding-bottom: 15px;
+        }
+    }
+}

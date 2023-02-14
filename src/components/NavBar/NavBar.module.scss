@@ -1,0 +1,40 @@
+@import '../../styles/heightComponents.scss';
+
+.container {
+    height: $height_navbar;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center;
+
+    &__navbar {
+        display: flex;
+        font-size: 25px;
+    }
+
+    &__navbar li {
+        margin: 10px 20px;
+        border-bottom: 2px solid #FFF;
+    }
+
+    &__navbar li:hover {
+        cursor: pointer;
+        color: rgb(230, 230, 62);
+        border-bottom: 2px solid rgb(230, 230, 62);
+        scale: 1.05;
+        transition: .5s;
+    }
+
+    &__link {
+        text-decoration: none;
+        list-style: none;
+        color: #FFF;
+    }
+
+    &__link:hover {
+        scale: 1.05;
+        color: rgb(230, 230, 62);
+    }
+
+}

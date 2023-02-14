@@ -1,0 +1,118 @@
+.container {
+    min-width: 300px;
+    width: 300px;
+    color: #000;
+
+    &__imagem {
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-color: rgba(255, 0, 0, 0.7);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__imagem img {
+        border-radius: 20px 20px 0 0;
+        height: 150px;
+        width: 300px;
+    }
+
+    // CONTAINER INFORMACAO
+    // CONTAINER INFORMACAO
+    &__informacao {
+        text-align: center;
+        background-color: #dbdbdb;
+        border-radius: 0 0 5px 5px;
+
+        &__name {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px 0 2px 0;
+            border-bottom: 1px solid #000;
+            display: inline-block;
+        }
+
+        &__price {
+            padding: 25px 0 0 0;
+        }
+
+        &__description {
+            padding: 10px 0;
+            padding: 15px;
+            border-radius: 0 0 5px 5px;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+}
+
+.container:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+
+// CONTAINER--ATIVO
+// CONTAINER--ATIVO
+// CONTAINER--ATIVO
+.container--ativo {
+    width: 92%;
+    gap: 0;
+    background-color: #000;
+    border-radius: 20px 20px 20px 20px;
+
+
+    .container {
+        &__imagem {
+            display: none;
+        }
+
+        &__informacao {
+            border-radius: 20px 20px 20px 20px;
+
+            &__name {
+                padding: 0;
+                margin-left: 30px;
+            }
+
+            &__price {
+                margin-left: 20px;
+                padding: 0 90px 0 0;
+                position: absolute;
+                right: 0;
+                user-select: none;
+            }
+
+            &__description {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+}
+
+.container--ativo:hover {
+    cursor: auto;
+}
+
+
+
+// CONTAINER__INFORMACAO--ATIVO
+// CONTAINER__INFORMACAO--ATIVO
+// CONTAINER__INFORMACAO--ATIVO
+.container__informacao--ativo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}

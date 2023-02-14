@@ -1,0 +1,41 @@
+@import '../../styles/heightComponents.scss';
+
+.container {
+    // BACKGROUND
+    background-image: url('https://www.stockvault.net/data/2020/12/20/281740/preview16.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    // GRID
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $height_navbar $height_banner $height_whats $height_footer;
+    grid-template-areas:
+    "navbar" "banner" "whats" "footer";
+
+    &__navbar {
+        grid-area: navbar;
+        height: $height_navbar;
+    }
+
+    &__banner {
+        grid-area: banner;
+        height: $height_banner;
+    }
+
+    &__whats {
+        grid-area: whats;
+        height: $height_whats;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__footer {
+        grid-area: footer;
+        height: $height_footer;
+    }
+}
